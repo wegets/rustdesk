@@ -89,6 +89,33 @@ class _DesktopHomePageState extends State<DesktopHomePage>
         alignment: Alignment.center,
         child: loadLogo(),
       ),
+      // Telstra branding
+      Padding(
+        padding: const EdgeInsets.only(top: 18.0, bottom: 2.0),
+        child: Column(
+          children: const [
+            Text(
+              'Telstra',
+              style: TextStyle(
+                color: Color(0xFF7C3AED),
+                fontSize: 30,
+                fontWeight: FontWeight.w800,
+                letterSpacing: 0.5,
+                height: 1.1,
+              ),
+            ),
+            Text(
+              'RustDesk',
+              style: TextStyle(
+                color: Color(0xFF8B5CF6),
+                fontSize: 17,
+                fontWeight: FontWeight.w600,
+                letterSpacing: 1.2,
+              ),
+            ),
+          ],
+        ),
+      ),
       buildTip(context),
       if (!isOutgoingOnly) buildIDBoard(context),
       if (!isOutgoingOnly) buildPasswordBoard(context),
